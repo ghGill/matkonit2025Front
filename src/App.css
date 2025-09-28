@@ -1,0 +1,18 @@
+#root {
+  text-align: center;
+  height:100%;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.content {
+    width: 100%;
+    min-width: 100%;
+    background-color: rgb(156, 145, 145);
+    flex: 1;
+    overflow-y: auto;
+}

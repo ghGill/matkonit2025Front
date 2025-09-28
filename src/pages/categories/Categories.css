@@ -1,0 +1,109 @@
+.categories-table {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.categories-table table {
+    width: 75%;
+    font-size: 24px;
+}
+
+.categories-table table th {
+    background-color: rgb(206, 147, 58);
+    color: black;
+}
+
+.categories-table table th,td {
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 4px;
+}
+
+.categories-table table th:nth(0) {
+    width: 50%;
+}
+
+.categories-table table tr:nth-child(odd) {
+    background-color: rgb(128, 124, 121);
+}
+
+.categories-table table tr:nth-child(even) {
+    background-color: rgb(168, 163, 156);
+}
+
+.categories-table table tr.mobile {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 18px;
+    margin-top: 18px;;
+}
+
+.categories-table table tr.mobile td:nth-child(odd) {
+    flex-direction: row;
+}
+
+.categories-table table .font-icon {
+    font-size: larger;
+    cursor: pointer;
+}
+
+.categories-table table .font-icon:hover {
+    transform: scale(1.2);
+}
+
+.categories-table table input {
+    direction: rtl;
+    width: 98%;
+    border: unset;
+    text-align: center;
+}
+
+.categories-table table input.mobile {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.add-category {
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    align-items: center;
+}
+
+.add-category form {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+}
+
+.add-category form input {
+    font-size: 2rem;
+}
+
+.categories-content button {
+    font-size:2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 6px;
+    background-color: #bba77d;
+    margin-bottom: 1rem;
+}
+
+.categories-table input {
+    cursor:pointer;
+    font-size: 2rem;
+}
+
+.categories-table input:read-only {
+    background-color: transparent;
+}
+
+.categories-table .actions {
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,248 @@
+.section {
+    width: 99%;
+    min-width: 99%;
+    height: fit-content;
+    min-height: 100%;
+    max-height: fit-content;
+    border: 3px solid rgb(249, 252, 249);
+    border-radius: 12px;
+    padding: 12px;
+    box-sizing: border-box;
+    margin-top: 12px;
+    box-shadow: 8px 8px 8px black;
+    background-color: rgb(211, 144, 21);
+}
+
+.page-content {
+    width: 100%;
+    height: 100%;
+    padding: 4px;
+    box-sizing: border-box;
+}
+
+.upper-panel {
+    height: fit-content;
+    min-height: 10%;
+    max-height: fit-content;
+}
+
+.upper-panel .actions {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    direction: rtl;
+    font-size: 2rem;
+    color: black;
+    justify-content: space-around;
+    gap:12px;
+}
+
+.actions.mobile {
+    font-size: 1rem;
+    font-weight: bold;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.action-panel {
+    display: flex;
+    align-items: center;
+    gap:8px;
+}
+
+.action-panel .action-title {
+    width: 10%;
+}
+
+.action-panel .action-title.mobile {
+    width: 20%;
+}
+
+.action-panel.mobile {
+    width: 100%;
+}
+
+.action-panel select, 
+.action-panel input, 
+.action-panel button {
+    font-size: 2rem;
+    padding: 8px;
+    border-radius: 8px;
+    width:60%;
+}
+
+.action-panel.mobile select,
+ .action-panel.mobile input,
+ .action-panel.mobile button {
+    font-size: 1rem;
+    margin-right: unset;
+}
+
+.action-panel button {
+    cursor: pointer;
+    width: 100%;
+    margin: 8px;
+}
+
+.recipes-area {
+    height: 75%;
+    min-height: 75%;
+    max-height: max-content;
+}
+
+.recipes-list {
+    height: inherit;
+    overflow-y: auto;
+}
+
+.recipe-item {
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    height: 40px;
+    min-height: 40px;
+    width: 99%;
+    background-color: rgb(95, 121, 155);
+    margin-top: 8px;
+    border: 4px solid black;
+    border-radius: 12px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.recipe-item.add-item {
+    background-color: white;
+    color: black;
+    width:96%;
+}
+
+.recipe-item.mobile {
+    font-size: 1rem;
+}
+
+.edit-form {
+    direction: rtl;
+    width: 100%;
+    height:100%;  
+}
+
+.edit-form form {
+    width:100%;  
+    height:100%; 
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.edit-form form .form-data {
+    display: flex;
+    height: 88%;
+    max-height: 88%;
+    gap: 8px;
+}
+
+.edit-form form .form-data.mobile {
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-form .new-element {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 4px;
+}
+
+.edit-form .new-element.mobile {
+    width: 100%;
+}
+
+.edit-form .new-element input {
+    margin: 0;
+    font-size: 1.5rem;;
+}
+
+.edit-form .new-element label {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.edit-form .new-element textarea {
+    height: 100%;
+    border: 4px solid black;
+    border-radius: 12px;
+    resize: none;
+    font-size: 18px;
+    height: 400px;
+}
+
+.edit-form .new-element textarea.mobile {
+    height: 200px;
+}
+
+.new-panel {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4px;
+    border-radius: 8px;
+    border: 3px solid black;
+    background-color: rgb(153, 125, 85);   
+}
+
+.new-panel .font-icon {
+    font-weight: 100;
+}
+
+.recipe-row {
+    display: flex;
+    align-items: center;    
+}
+
+.font-icon {
+    color : black;
+    font-size: 40px;
+    cursor: pointer;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-right: 8px;
+}
+
+.font-icon:hover {
+    color: white;
+}
+
+.recipe-img {
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.recipe-img img {
+    max-width: 100%;
+    border: 2px solid black;
+    border-radius: 8px;
+    box-shadow: 4px 4px 4px black;
+    cursor: pointer;
+    max-height: 100%;
+    object-fit: contain;
+    display:block;
+}
+
+.zoom-area {
+    width: 100%;
+    height:100%;
+    background-color: black;
+    opacity: 0.7;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.zoomImg {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    cursor: pointer;
+}
